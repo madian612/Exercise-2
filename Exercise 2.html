@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petemuan 2</title>
+</head>
+
+<body>
+ 
+Nomor 1 : <input type="text" id="field1"><br>
+Nomor 2 : <input type="text" id="field2"><br>
+	<button onclick="tambah()"> + </button>
+	<button onclick="kurang()"> - </button>
+	<button onclick="kali()"> * </button>
+	<button onclick="bagi()"> / </button><br>
+Hasil: <input type="text" id="field3"><br>
+
+
+<script>
+	let dataA = parseInt(document.getElementById("field1").value); 
+	let dataB = parseInt(document.getElementById("field2").value);
+	
+	function tambah() {document.getElementById("field3").value = dataA + dataB}	
+	function kurang() {document.getElementById("field3").value = dataA - dataB}	 
+	function kali() {document.getElementById("field3").value = dataA * dataB}
+	function bagi() {document.getElementById("field3").value = dataA / dataB}	
+</script>
+
+</body>
+</html>
